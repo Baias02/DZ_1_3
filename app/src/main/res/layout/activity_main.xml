@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_fon"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Укажите место жительство"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/area"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Область"
+        android:background="@drawable/buttun_bakround"
+        android:backgroundTint="@color/white"
+        android:paddingStart="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Город"
+        android:paddingStart="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/buttun_bakround"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <EditText
+        android:id="@+id/street"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:hint="Улица"
+        android:paddingStart="20dp"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/buttun_bakround"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/NEXT"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:background="@drawable/buttun_bakround"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/street"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
